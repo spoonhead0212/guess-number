@@ -7,7 +7,7 @@ const start = document.querySelector('.start');
 // start guessing... 
 
 let score = document.querySelector('.score');
-// How many timesyou have left to play
+// How many times you have left to play
 
 const highScore = document.querySelector('.currenthigh');
 
@@ -26,7 +26,6 @@ document.querySelector('.check-btn').addEventListener('click', function() {
     } else if (predict < randomNumber){
         start.textContent = 'Too Low 📉';
         scoreChance--
-        // score.textContent = scoreChance;
         document.querySelector('.score').textContent = scoreChance;
         if (scoreChance < 1) {
             start.textContent = 'You lost Bro😢'
@@ -35,7 +34,6 @@ document.querySelector('.check-btn').addEventListener('click', function() {
     } else if (predict > randomNumber) {
         start.textContent = 'Too High 📈';
         scoreChance--
-        // score.textContent = scoreChance;
         document.querySelector('.score').textContent = scoreChance;
         if (scoreChance < 1) {
             start.textContent = 'You lost Bro😢'
@@ -68,5 +66,4 @@ document.querySelector('.again-btn').addEventListener('click', function() {
     document.body.style.backgroundColor = '#000000';
     document.querySelector('.score').textContent = score;
     document.querySelector('.start').textContent = '😎 Start Guessing...';
-
 })

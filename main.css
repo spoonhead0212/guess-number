@@ -137,6 +137,9 @@ header {
 }
 
 @media (max-width: 750px) {
+    main {
+        min-height: 100vh;
+    }
     .top {
         flex-direction: column;
         gap: 2rem;
@@ -144,11 +147,13 @@ header {
 
     .bottom-div {
         border: unset;
+        padding-block: 1rem;
     }
 
     .heading {
         line-height: 1.5;
-        margin-top: 1rem;
+        font-size: 20px;
+        margin-block: 1rem;
     }
 
     .bottom-sec {
@@ -157,9 +162,22 @@ header {
 
     .number {
         transform: translate(-50%, 0);
+        padding: 1rem;
     }
 
     .right {
         padding-block: 1rem;
+    }
+
+    .right p {
+        font-size: 12px;
+    }
+
+    .predict-num {
+        width: 140px;
+    }
+
+    .check-btn {
+        padding: 15px 20px;
     }
 }
